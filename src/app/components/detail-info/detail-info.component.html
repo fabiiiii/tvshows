@@ -1,5 +1,12 @@
 
-foo
+
 <h3>{{show.label}}</h3>
 
 <img [src]="show.img">
+
+<h5 [innerHTML]="show.summary"></h5>
+<h4> {{show.name}}</h4>
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item" *ngFor="let g of show.genre">{{g}}</li>
+
+</ul>
